@@ -114,8 +114,6 @@ img {
         font-size: 1.8rem;
     }
 }
-
-/* Responsive design for mobile devices */
 @media (max-width: 768px) {
     h1 {
         font-size: 2rem;
@@ -137,7 +135,7 @@ img {
     }
 
     .scoreboard {
-        flex-direction: column; /* Stack the scores vertically */
+        flex-direction: column; 
         gap: 2rem;
     }
 
