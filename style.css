@@ -2,14 +2,17 @@
     margin: 0;
     padding: 0;
     text-align: center;
-    background-color: #002E2C;
+    background-color: #603A40;
+    box-sizing: border-box;
 }
 
 h1 {
-    background-color: #C3C49E;
-    color:#524632;
+    background-color: #001A23;
+    color:#E8F1F2;
     height: 5rem;
     line-height: 5rem;
+    font-family: CHILLER;
+    font-size: 3.5rem;
 }
 
 .choice {
@@ -52,6 +55,8 @@ img {
     font-size: 2rem;
     margin-top: 3rem;
     gap: 5rem;
+    color: #001A23;
+    font-family: CHILLER;
 }
 
 .userscore {
@@ -79,4 +84,69 @@ img {
     opacity: 0.7;
     transition: all 0.3s ease;
     transform: scale(1.1); 
+}
+
+@media (max-width: 1024px) {
+    h1 {
+        font-size: 2.5rem;
+        line-height: 4rem;
+    }
+
+    .choice {
+        height: 140px;
+        width: 140px;
+    }
+
+    img {
+        height: 130px;
+        width: 130px;
+    }
+
+    .choices {
+        gap: 2rem;
+    }
+
+    .userscore, .compscore {
+        font-size: 3rem;
+    }
+
+    #msg {
+        font-size: 1.8rem;
+    }
+}
+
+/* Responsive design for mobile devices */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+        line-height: 3.5rem;
+    }
+
+    .choice {
+        height: 100px;
+        width: 100px;
+    }
+
+    img {
+        height: 90px;
+        width: 90px;
+    }
+
+    .choices {
+        gap: 1.5rem;
+    }
+
+    .scoreboard {
+        flex-direction: column; /* Stack the scores vertically */
+        gap: 2rem;
+    }
+
+    .userscore, .compscore {
+        font-size: 2.5rem;
+    }
+
+    #msg {
+        font-size: 1.5rem;
+        padding: 0.8rem;
+    }
 }
